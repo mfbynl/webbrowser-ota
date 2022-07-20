@@ -7,8 +7,8 @@
 #include <ESP8266HTTPUpdateServer.h>
 
 #ifndef STASSID
-#define STASSID "Turksat_Kablonet_432F68_2.4"
-#define STAPSK  "Q6nSVH8F"
+#define STASSID "****"
+#define STAPSK  "****"
 #endif
 
 const char* ssid = STASSID;
@@ -96,9 +96,5 @@ void loop() {
   httpServer.handleClient();
   MDNS.update();
 
-  if(millis() - lastTime > 1000)
-  {
-    digitalWrite(15, !digitalRead(15));
-    lastTime = millis();
-  }
+  //Enter your code here
 }
